@@ -1,0 +1,8 @@
+mkdir face_info_app
+cd face_info_app
+python -m venv env
+source env/bin/activate
+pip install django djangorestframework pillow requests
+django-admin startproject backend
+cd backend
+django-admin startapp face_recognition
